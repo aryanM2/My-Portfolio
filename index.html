@@ -1,260 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>myPortfolio.com</title>
+    <title>Aryan | FullStack Developer & Java Programmer</title>
+    <meta name="description" content="Aryan\'s Portfolio - Passionate FullStack Developer, Java Programmer, Python Enthusiast. B.Tech CSE Student at NIET with internships at CodSoft.">
+    <meta name="keywords" content="FullStack Developer, Java, Python, Web Development, Portfolio, Aryan">
+    <meta name="author" content="Aryan">
+    <meta property="og:title" content="Aryan | FullStack Developer">
+    <meta property="og:description" content="Check out my projects and skills!">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>" type="image/svg+xml">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="portfolio.css">
 </head>
-<link rel="stylesheet" href="portfolio.css">
 <body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Loading portfolio...</p>
+        </div>
+    </div>
+
     <div class="main_cont">
-   
-        <nav class="navigation">
-            <div class="left">Aryan's portfolio</div>
-           <div class="invert">
-             <img class="invert" src="hamburger.svg" alt="">
-           </div>
-
-           <div class="locator">
-            <div class="close_svg"><img src="close.svg" alt=""></div>
-            <div class="links">
-            <ul>
-               <li><a href="#home">home</a></li>
-                    <li><a href="#about">about </a></li>
-                    
-                    <li><a href="#project">projects</a></li>
-                    <li><a href="#Contact">contact me</a></li>
-            </ul>
+        <!-- Navbar -->
+        <nav class="navigation" data-aos="fade-down">
+            <div class="nav-brand">Aryan&apos;s Portfolio</div>
+            <div class="nav-toggle invert">
+                <img src="hamburger.svg" alt="Menu toggle" aria-label="Open navigation menu">
             </div>
-            
-           </div>
-
-            <div class="right">
-              
-                <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about </a></li>
-                    
-                    <li><a href="#project">projects</a></li>
-                    <li><a href="#Contact">contact me</a></li>
+            <ul class="nav-links right">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Theme Toggle -->
+            <label class="theme-toggle" for="theme-toggle">
+                <input type="checkbox" id="theme-toggle">
+                <span class="toggle-icon"></span>
+            </label>
+            <div class="mobile-menu locator">
+                <div class="close_svg">
+                    <img src="close.svg" alt="Close menu" aria-label="Close navigation menu">
+                </div>
+                <ul class="mobile-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-        
         </nav>
-        <div class="second">
 
-            <div id="home" class="content">
-              Hi, I am  <span>Aryan</span>
+        <!-- Hero -->
+        <section id="home" class="hero second" data-aos="fade-up">
+            <div class="hero-content content">
+                <h1>Hi, I am <span class="highlight">Aryan</span></h1>
+                <p>I am a passionate</p>
+                <span id="element"></span>
+                <div class="hero-buttons">
+                    <a href="recentResume.pdf" target="_blank" class="btn bttn1" aria-label="Download Resume">Download Resume</a>
+                    <a href="https://github.com/aryanM2" target="_blank" rel="noopener noreferrer" class="btn bttn2" aria-label="Visit GitHub">Visit GitHub</a>
+                    <a href="https://www.linkedin.com/in/aryan-malwa/" target="_blank" rel="noopener noreferrer" class="btn bttn2" aria-label="Connect on LinkedIn">LinkedIn</a>
+                </div>
+            </div>
+            <div class="hero-image content_image">
+                <img src="developer.png" alt="Aryan, FullStack Developer" loading="lazy">
+            </div>
+        </section>
 
-              <div>I am a passionate</div>
-              <span id="element"></span>
-              <br>
-              <a href="recentResume.pdf" target="_blank"><button class="bttn1" >download resume</button></a> 
+        <!-- Skills -->
+        <section id="skills" class="skills-section second_section" data-aos="fade-up">
+            <h2>My Skills</h2>
+            <div class="skills-grid lines">
+                <div class="skill-item skills_content" data-aos="zoom-in">
+                    <h3>Web Development</h3>
+                    <div class="skill-bar">
+                        <span style="--progress: 90%;"></span>
+                    </div>
+                </div>
+                <div class="skill-item skills_content" data-aos="zoom-in" data-aos-delay="200">
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <span style="--progress: 85%;"></span>
+                    </div>
+                </div>
+                <div class="skill-item skills_content" data-aos="zoom-in" data-aos-delay="400">
+                    <h3>Java</h3>
+                    <div class="skill-bar">
+                        <span style="--progress: 88%;"></span>
+                    </div>
+                </div>
+                <div class="skill-item skills_content" data-aos="zoom-in" data-aos-delay="600">
+                    <h3>Database</h3>
+                    <div class="skill-bar">
+                        <span style="--progress: 80%;"></span>
+                    </div>
+                </div>
+                <div class="skill-item skills_content" data-aos="zoom-in" data-aos-delay="800">
+                    <h3>OOP</h3>
+                    <div class="skill-bar">
+                        <span style="--progress: 92%;"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-              <a href="https://github.com/aryanM2" target="_blank"> <button class="bttn2"> visit github</button></a>
+        <!-- Ultimate About Section - No Image -->
+        <section id="about" class="about_section ultimate-about" data-aos="fade-up">
+            <div class="about-container" data-aos="fade-up">
+                <h2>About Me</h2>
+                <div class="journey-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>B.Tech Computer Science and Engineering</h3>
+                            <p>Noida Institute of Engineering & Technology (NIET) | Expected 2028</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Internships @ CodSoft</h3>
+                            <p>Web Development & Python Intern | Real-world project experience</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Certifications</h3>
+                            <p>Generative ai - Google | Python for Data Science - IBM | Carrier Essential in software development - Microsoft & LinkedIn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-highlight">
+                    <p><strong>FullStack Developer</strong> specializing in <strong>MERN Stack</strong>, <strong>Java</strong>, <strong>Python</strong> & modern web technologies. Built 7+ production-ready projects including AI chatbots, marketplaces & task managers. Passionate about clean code, performance & innovative solutions.</p>
+                </div>
+                <div class="tech-stack">
+                    <h4>Core Technologies</h4>
+                    <div class="tech-badges">
+                        <span>MongoDB</span>
+                        <span>Express</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            </div> 
+        <!-- Projects -->
+        <section id="project" class="projects-section" data-aos="fade-up">
+            <h2 class="proj">Featured Projects</h2>
+            <div class="projects-grid project_boxes">
+                <article class="project-card p_box" data-aos="flip-left">
+                    <h3>Personal Portfolio</h3>
+                    <p>Modern responsive portfolio with glassmorphism, animations, theme toggle. Built with HTML/CSS/JS.</p>
+                    <div class="project-links">
+                        <a href="https://portfolio-org-y9fk.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        <a href="https://github.com/aryanM2/portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </article>
+                 <article class="project-card p_box" data-aos="flip-right" data-aos-delay="200">
+                    <h3>Student Marketplace</h3>
+                    <p>Full-stack marketplace for students to buy/sell items. Authentication, responsive UI.</p>
+                    <div class="project-links">
+                        <a href="https://marketplace-frontend-pvsn.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        <a href="https://github.com/aryanM2/marketplace-Website" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </article>
+                 <article class="project-card p_box" data-aos="flip-left" data-aos-delay="600">
+                    <h3>Spoofy Chatbot</h3>
+                    <p>Advanced MERN stack AI chatbot with real-time messaging, authentication, and responsive UI. Spotify-themed interface.</p>
+                    <div class="project-links">
+                        <a href="https://spoofybot-s3c1.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        <a href="https://github.com/aryanM2/spoofyBot" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </article>
 
-            <div class="content_image">
-                <img src="developer.png" alt="">
-            </div></span>
-        </div>
-        
-        
-        <div class="second_section">
-            <h1>My Skills:-</h1>
+                 <article class="project-card p_box" data-aos="flip-right" data-aos-delay="800">
+                    <h3>Taskmanager System</h3>
+                    <p>Full MERN task management app with drag-drop, user auth, real-time updates, and analytics dashboard.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        <a href="https://github.com/aryanM2/TaskManagerApp" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </article>
+                <article class="project-card p_box" data-aos="flip-left" data-aos-delay="200">
+                    <h3>Weather app</h3>
+                    <p>Full-featured weather Application which shows weather details of specific location</p>
+                    <div class="project-links">
+                        <a href="https://weather-app-27ox.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        <a href="https://github.com/aryanM2/Weather-app" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </article>
 
-        </div>
-        <div class="lines">
-         <div class="skills_content" >
-          
-            <h2>Web development</h2>
-          
-           
-         </div>
-
-        <div class="skills_content" >
-          
-            <h2>Python programming</h2>
-          
-          
-        </div>
-
-
-        <div class="skills_content" >
-          
-            <h2>Java programming</h2>
-          
-          
-        </div>
-
-
-
-        <div class="skills_content" >
-         
-            <h2>Database management system</h2>
-          
-           
-        </div>
-
-        <div class="skills_content" >
-          
-            <h2>object oriented programming</h2>
-          
-          
-        </div>
-
-
-
-     </div>
-
-   
-
-
-      <div class="about_section">
-        <div id="about">
-            <h1>About Me</h1>
-            <br>
-            <p> Currently pursuing a Bachelor of Technology in Computer Science and Engineering at Noida Institute of Engineering & Technology, with a strong foundation in computer engineering and problem-solving. Holds multiple certifications, including Next Gen Technology and Programming Fundamentals using Python, issued by Infosys Springboard in 2024. 
-
-Completed internships at CodSoft as a Web Developer Intern and Python Programming Intern, contributing to projects with programming and problem-solving skills. Demonstrates a keen interest in portfolio management and technology-driven innovation, aiming to develop impactful solutions in the field of computer science.</p>
-            
-            
-        </div>
-
-        <div class="img_about">
-            <img src="about.png" alt="">
-        </div>
-
-      </div>
-        
-   <br><br>
-    <div id="project">
-
-
-     <div class="proj">
-        <h1>Projects</h1>
-     </div>
-      <div class="project_boxes">
-        
-        <div class="p_box" id="portfolio">
-          <div class="p_heading">
-           <div class="overview_1"> <h2>Portfolio</h2></div>
-          </div>
-          <br>
-          <div class="p_para">
-            <p>This portfolio website is a personal project built using HTML, CSS, and JavaScript to showcase my skills, projects, and creativity. It features a clean, responsive design and smooth navigation for an engaging user experience.</p>
-          </div>
-        </div>
-        <div class="p_box" id="spotify">
-          <div class="p_heading">
-            <div class="overview_2"><h2>Spotify clone</h2></div>
-          </div>
-          <br>
-           <div class="p_para">
-            <p>This portfolio website is a personal project built using HTML, CSS, and JavaScript to showcase my skills, projects, and creativity. It features a clean, responsive design and smooth navigation for an engaging user experience.</p>
-          </div>
-        </div>
-        <div class="p_box" id="emp">
-          <div class="p_heading">
-            <div class="overview_3"><h2>Password generator</h2></div>
-          </div>
-           <div class="p_para">
-           <br>
-            This portfolio website is a personal project built using HTML, CSS, and JavaScript to showcase my skills, projects, and creativity. It features a clean, responsive design and smooth navigation for an engaging user experience.
-            
-          </div>
-        </div>
-         <div class="p_box" id="spotify">
-          <div class="p_heading">
-            <div class="overview_2"><h2>Marketplace</h2></div>
-          </div>
-          <br>
-           <div class="p_para">
-            <p>A full-stack marketplace platform designed for students to list, discover, and trade items. Developed using modern web technologies with secure authentication and responsive design.</p>
-          </div>
-        </div>
-        <div class="p_box" id="emp">
-          <div class="p_heading">
-            <div class="overview_3"><h2>Library management</h2></div>
-          </div>
-           <div class="p_para">
-           <br>
-           A Java-based Library Management System that stores and manages book records using text files, enabling efficient data persistence without a database.
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="contact_section" id="Contact">
-      <form class="contact_form" action="mailto:your-email@example.com" method="POST" name="google-sheet" enctype="text/plain">
-        <h2>Contact Me</h2>
-        
-
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <br>
-
-        
-        <button type="submit" name="submit">Submit</button>
-      </form>
-    </div>
-            
-            
-   </div>
-</div>  
-
-
-
-
-
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-          strings: ['Java programmar ' ,'FullStack Developer'],
-          typeSpeed: 50,
-        }); 
-      
-          const scriptURL = 'https://script.google.com/macros/s/AKfycbzxKrUsuskHNsSrDzSeJBel7yyXq1XOJBZlkUaIBI299TodGPdOmK1gpOGawd5ZTPPt/exec'
-            const form = document.forms['google-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-                .catch(error => console.error('Error!', error.message))
-            })
-
-
-            let e = document.querySelector(".invert")
-           
-            e.addEventListener("click",function(){
-              document.querySelector(".locator").style.display = "block"
+                <article class="project-card p_box" data-aos="flip-left" data-aos-delay="200">
+                    <h3>Spotify Clone</h3>
+                    <p>Full-featured Spotify UI clone with React and music player simulation. Responsive design.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        <a href="https://github.com/aryanM2/SpotifyClone" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </article>
               
-            })
+               
+                
+               
+               
+            </div>
+        </section>
 
+        <!-- Testimonials (New) -->
+        <section class="testimonials-section" data-aos="fade-up">
+            <h2>Testimonials</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial" data-aos="zoom-in">
+                    <p>"Excellent web development skills! Delivered high-quality work during internship."</p>
+                    <h4>- CodSoft Team</h4>
+                </div>
+                <div class="testimonial" data-aos="zoom-in" data-aos-delay="200">
+                    <p>"Strong problem-solving with Python. Great team player."</p>
+                    <h4>- Mentor</h4>
+                </div>
+                <div class="testimonial" data-aos="zoom-in" data-aos-delay="400">
+                    <p>"Impressive Java projects. Future-ready developer."</p>
+                    <h4>- Professor NIET</h4>
+                </div>
+            </div>
+        </section>
 
-             let j = document.querySelector(".close_svg")
-           
-            j.addEventListener("click",function(){
-              document.querySelector(".locator").style.display = "none"})
+        <!-- Contact -->
+        <section id="contact" class="contact_section" data-aos="fade-up">
+            <form class="contact_form" name="google-sheet" novalidate>
+                <h2>Get In Touch</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
 
+        <!-- Footer (New) -->
+        <footer class="footer" data-aos="fade-up">
+            <p>&copy; 2024 Aryan. Built with ❤️ | <a href="https://github.com/aryanM2" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="www.linkedin.com/in/aryan-malwa" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
 
+        </footer>
+    </div>
 
-
-      </script>
-  
+    <!-- Scripts -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
-
-
-</script>
 </html>
+
